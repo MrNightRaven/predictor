@@ -1,1 +1,1 @@
-time prediction : 258
+time prediction : 220
