@@ -26,4 +26,4 @@ while (True):
     predict()
     time.sleep(2)
     main()
-    time.sleep(10)
+    time.sleep(5)
