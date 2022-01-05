@@ -20,7 +20,7 @@ def predict():
 
 def main():
     os.system('git commit -a -m "%s"' % (getCurrentTime()))
-    os.system("git push -u origin master")
+    os.system("git push -u origin main")
 
 while (True):
     predict()
