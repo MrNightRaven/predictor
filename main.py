@@ -4,13 +4,13 @@ from datetime import date
 import time, os, sys, pytz, random
 
 def getCurrentTime():
-    today = date.today()
-    tanggal = today.strftime("%d/%m%Y")
-    tz_id = pytz.timezone('Asia/Makassar')
-    datetime_MK = datetime.now(tz_ID)
-    waktu = datetime_MK.strftime("%H:%M:%S")
-    result = tanggal + " " + waktu
-    return result
+	today = date.today()
+	tanggal = today.strftime("%d/%m/%Y")
+	tz_ID = pytz.timezone('Asia/Makassar')
+	datetime_MK = datetime.now(tz_ID)
+	waktu = datetime_MK.strftime("%H:%M:%S")
+	result = tanggal + " " + waktu
+	return result
 
 def predict():
     file = open('./data.txt', 'w+')
@@ -23,6 +23,6 @@ def main():
     os.system("git push -u origin master")
 
 while (True):
-    # main()
     predict()
-    time.sleep(2)
+    main()
+    time.sleep(10)
